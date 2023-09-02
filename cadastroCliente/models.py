@@ -14,7 +14,7 @@ class Cadastro_Cliente(models.Model):
     nome = models.CharField(max_length=100)
     sobrenome = models.CharField(max_length=100)
     email = models.EmailField()
-    senha = models.CharField(max_length=50 )
+    senha = models.CharField(max_length=50)
     nascimento = models.DateField()
     numero = models.CharField(max_length=11)
     Genero = models.ForeignKey(
