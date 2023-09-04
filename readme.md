@@ -125,3 +125,5 @@ python manage.py runserver
   O banco de dados utilizado foi o PostgreSQL, com a senha padrão "unipe", ip padrão "127.0.0.1", porta padrão "5432" e usuario padrão "postgres".
 
   É necessario a instalação do postgres em sua maquina para o funcionamento correto da API.
+
+##
