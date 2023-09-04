@@ -17,3 +17,5 @@ class GeneroViewSet(viewsets.ModelViewSet):
     queryset = Genero.objects.all()
     serializer_class = GeneroSerializer
     pagination_class = PaginaCustomizadaGeneros
+
+#
