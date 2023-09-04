@@ -1,6 +1,8 @@
 # desafio_workshop_backend_2023_2
 ⚙ workshop fabrica de software 2023.2
 
+Este projeto tem como objetivo realizar o cadastro de clientes e armazenar os dados cadastrados em um banco de dados, além de implementar um método de filtragem e busca para atender a especificações requeridas. Isso inclui a possibilidade de buscar por nomes específicos, e-mails, números de telefone e até mesmo por gênero.
+
 ## Como executar:
 
 1. clonar repositorio:
@@ -109,7 +111,17 @@ python manage.py runserver
     ```
   *DELETE*: Deletando um dado específico da API: *rota_api/produto/produto/id*
 
-## Realizando a **busca/consulta** de um nome especifico
+## Realizando a **busca/consulta** de alguma especificação
 
-- *GET*:
-  rota_api/cadastrocliente/CadastroCliente/?nome=busca : Retorna os dados que contém 'busca' em seu NOME
+  Ao utilizar o servidor local, será possivel visualizar uma opção chamada "FILTERS", onde deve ser digitado a especificação que se procura. EX: gustavo, teste@teste.com, 021981827567, masculino.
+
+  Rota: http://API-ROTA/cadastrocliente/CadastroCliente/?search=NOME
+  Rota: http://API-ROTA/cadastrocliente/CadastroCliente/?search=EMAIL
+  Rota: http://API-ROTA/cadastrocliente/CadastroCliente/?search=NUMERO
+  Rota: http://API-ROTA/cadastrocliente/CadastroCliente/?search=GENERO
+
+## Banco de dados para armazenamento de dados
+
+  O banco de dados utilizado foi o PostgreSQL, com a senha padrão "unipe", ip padrão "127.0.0.1", porta padrão "5432" e usuario padrão "postgres".
+
+  É necessario a instalação do postgres em sua maquina para o funcionamento correto da API.
